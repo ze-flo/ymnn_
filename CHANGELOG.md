@@ -1,5 +1,24 @@
 # Changelog
 
+### [0.2.1](https://www.github.com/ze-flo/ymnn_/compare/v0.2.0...v0.2.1) (2022-07-08)
+
+
+### Documentation
+
+* update readme ([#9](https://www.github.com/ze-flo/ymnn_/issues/9)) ([d677122](https://www.github.com/ze-flo/ymnn_/commit/d677122e1006bb8183d094ddb15b09558bdd4b3b))
+
+## [0.2.0](https://www.github.com/ze-flo/ymnn_/compare/v0.1.0...v0.2.0) (2022-07-08)
+
+
+### :rocket:  Features
+
+* add array difference ([#6](https://www.github.com/ze-flo/ymnn_/issues/6)) ([b87a087](https://www.github.com/ze-flo/ymnn_/commit/b87a087a7d7850aab760f0161ab3b014639e22ce))
+
+
+### :bug:  Bug Fixes
+
+* **array difference:** correct logic ([#8](https://www.github.com/ze-flo/ymnn_/issues/8)) ([16438b1](https://www.github.com/ze-flo/ymnn_/commit/16438b16e792b5a03ee444f62bfcae1ee90e3e69))
+
 ## [0.1.0](https://www.github.com/ze-flo/ymnn_/compare/v0.0.0...v0.1.0) (2022-07-08)
 
 
