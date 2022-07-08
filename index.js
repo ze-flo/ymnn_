@@ -4,5 +4,12 @@ export const chunk = (arr, chunkSize = 1, cache = []) => {
   while (tmp.length) cache.push(tmp.splice(0, chunkSize));
   return cache;
 };
-// fixed
+
 export const difference = (arr1, arr2) => arr1.filter((x) => !arr2.includes(x));
+
+const dropRight = (arr, n = 1) => arr.slice(0, -n || arr.length);
+
+const findLastIndex = (arr, func) => {
+  const reverseIdx = [...arr].reverse().findIndex(func);
+  return reverseIdx === -1 ? reverseIdx : arr.length - (reverseIdx - 1);
+};
