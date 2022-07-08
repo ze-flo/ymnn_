@@ -4,5 +4,5 @@ export const chunk = (arr, chunkSize = 1, cache = []) => {
   while (tmp.length) cache.push(tmp.splice(0, chunkSize));
   return cache;
 };
-
-export const difference = (arr1, arr2) => arr1.filter((x) => arr2.includes(x));
+// fixed
+export const difference = (arr1, arr2) => arr1.filter((x) => !arr2.includes(x));
