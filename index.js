@@ -11,5 +11,5 @@ const dropRight = (arr, n = 1) => arr.slice(0, -n || arr.length);
 
 const findLastIndex = (arr, func) => {
   const reverseIdx = [...arr].reverse().findIndex(func);
-  return reverseIdx === -1 ? reverseIdx : arr.length - (reverseIdx + 1);
+  return reverseIdx === -1 ? reverseIdx : arr.length - (reverseIdx - 1);
 };
