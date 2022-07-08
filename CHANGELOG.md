@@ -7,7 +7,6 @@
 
 * add `dropRight` ([4fae33c](https://www.github.com/ze-flo/ymnn_/commit/4fae33cc1c5e4fff9a40c4d422f958f203685a82))
 * add `FindLastIndex` ([4fae33c](https://www.github.com/ze-flo/ymnn_/commit/4fae33cc1c5e4fff9a40c4d422f958f203685a82))
-* add more goodies ([#11](https://www.github.com/ze-flo/ymnn_/issues/11)) ([4fae33c](https://www.github.com/ze-flo/ymnn_/commit/4fae33cc1c5e4fff9a40c4d422f958f203685a82))
 
 ### [0.2.1](https://www.github.com/ze-flo/ymnn_/compare/v0.2.0...v0.2.1) (2022-07-08)
 
