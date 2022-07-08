@@ -7,3 +7,8 @@ Inspired by https://youmightnotneed.com/lodash
 Excellent read to help you setup your FE env in 2022:
 
 https://jamesandrewwright.com/articles/commitizen-eslint-prettier-husky/
+
+## Release please
+
+https://github.com/googleapis/release-please
+https://github.com/google-github-actions/release-please-action
