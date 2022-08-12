@@ -1,0 +1,12 @@
+name: echo branch name on test* branches
+on:
+  push:
+    branches:
+      - test*
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: volta-cli/action@v1
+      - run: 'echo "${{ github.ref_name }}"'
