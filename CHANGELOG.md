@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/ze-flo/ymnn_/compare/v0.4.0...v0.4.1) (2023-11-17)
+
+
+### :bug:  Bug Fixes
+
+* **dropRight:** add back missing export ([#20](https://github.com/ze-flo/ymnn_/issues/20)) ([6efdfd7](https://github.com/ze-flo/ymnn_/commit/6efdfd708574a23ba1494fb99cda0d5fc46db6ab))
+
 ## [0.4.0](https://github.com/ze-flo/ymnn_/compare/v0.3.0...v0.4.0) (2023-11-17)
 
 
