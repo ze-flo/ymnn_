@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/ze-flo/ymnn_/compare/v0.4.1...v0.4.2) (2023-11-17)
+
+
+### :bug:  Bug Fixes
+
+* **findLastIndex:** add missing export ([#23](https://github.com/ze-flo/ymnn_/issues/23)) ([543dc63](https://github.com/ze-flo/ymnn_/commit/543dc63500b62d6ac8d47d54e9f0078a24c8deec))
+
 ## [0.4.1](https://github.com/ze-flo/ymnn_/compare/v0.4.0...v0.4.1) (2023-11-17)
 
 
