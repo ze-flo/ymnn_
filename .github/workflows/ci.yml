@@ -33,7 +33,7 @@ jobs:
       - id: release
         if: "github.ref == 'refs/heads/main'"
         name: Release
-        uses: GoogleCloudPlatform/release-please-action@v2
+        uses: google-github-actions/release-please-action@v3
         with:
           changelog-types: '[{"type":"feat","section":":rocket:  Features"},{"type":"fix","section":":bug:  Bug Fixes"},{"type":"refactor","section":":sunglasses:  Refactor","hidden":true},{"type":"perf","section":":bullettrain_front:  Performance Improvements"},{"type":"docs","section":"Documentation","hidden":false }]'
           package-name: YMNN_
