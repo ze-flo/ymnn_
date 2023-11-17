@@ -16,3 +16,6 @@ export const findLastIndex = (arr, func) => {
 
 export const intersection = (arr, ...args) =>
   arr.filter(item => args.every(arr => arr.includes(item)))
+
+
+export const takeRight = (arr, qty = 1) => [...arr].splice(-qty, qty)
