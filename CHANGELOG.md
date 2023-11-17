@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/ze-flo/ymnn_/compare/v0.3.0...v0.4.0) (2023-11-17)
+
+
+### :rocket:  Features
+
+* add `intersection` array utility fn ([#17](https://github.com/ze-flo/ymnn_/issues/17)) ([aeca43f](https://github.com/ze-flo/ymnn_/commit/aeca43fd980a41f41339034bae5b604c18f19425))
+
 ## [0.3.0](https://www.github.com/ze-flo/ymnn_/compare/v0.2.1...v0.3.0) (2022-07-08)
 
 
