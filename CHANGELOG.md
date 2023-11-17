@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/ze-flo/ymnn_/compare/v0.4.2...v0.5.0) (2023-11-17)
+
+
+### :rocket:  Features
+
+* add `takeRight` ([#25](https://github.com/ze-flo/ymnn_/issues/25)) ([39b78c2](https://github.com/ze-flo/ymnn_/commit/39b78c2dd641f1b704a1ea19bf921cf30f098997))
+
 ## [0.4.2](https://github.com/ze-flo/ymnn_/compare/v0.4.1...v0.4.2) (2023-11-17)
 
 
