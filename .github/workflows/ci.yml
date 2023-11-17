@@ -9,7 +9,7 @@ permissions:
   pull-requests: write
 
 env:
-  NODE_VERSION: "18"
+  NODE_VERSION: 18
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,21 +18,25 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "${{ env.NODE_VERSION }}"
-      - name: Cache
-        uses: actions/cache@v2
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
         with:
-          key: "v5-${{ runner.os }}-${{ hashFiles('yarn.lock') }}"
-          path: |
-            node_modules
-            /tmp/.yarn_cache
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
       - name: Yarn
         run: "yarn --pure-lockfile --cache-folder /tmp/.yarn_cache"
       - name: Lint
-        run: 'echo "Linting"'
+        run: echo "Linting"
       - name: Test
-        run: 'echo "Testing"'
+        run: echo "Testing"
       - name: Build
-        run: 'echo "Building"'
+        run: echo "Building"
       - id: release
         if: "github.ref == 'refs/heads/main'"
         name: Release
@@ -44,7 +48,7 @@ jobs:
       - continue-on-error: true
         if: "${{ steps.release.outputs }}"
         name: "Release info"
-        run: 'echo "${{ toJSON(steps.release.outputs) }}"'
+        run: echo "${{ toJSON(steps.release.outputs) }}"
       - if: "${{ github.ref == 'refs/heads/main' && steps.release.outputs.release_created }}"
         name: Publish
         run: 'echo "Publishing"'
