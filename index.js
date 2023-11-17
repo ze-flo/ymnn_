@@ -13,3 +13,6 @@ const findLastIndex = (arr, func) => {
   const reverseIdx = [...arr].reverse().findIndex(func);
   return reverseIdx === -1 ? reverseIdx : arr.length - (reverseIdx - 1);
 };
+
+export const intersection = (arr, ...args) =>
+  arr.filter(item => args.every(arr => arr.includes(item)))
